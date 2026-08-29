@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Quiz Game</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- LOGIN -->
+
+    <section id="loginPage">
+
+        <div class="card">
+
+            <div class="logo">🎮</div>
+
+            <h1>Quiz Game</h1>
+
+            <p>Masuk ke akunmu</p>
+
+            <input
+                id="loginUsername"
+                type="text"
+                placeholder="Username"
+            >
+
+            <input
+                id="loginPassword"
+                type="password"
+                placeholder="Password"
+            >
+
+            <button id="loginBtn">
+                🔐 Login
+            </button>
+
+            <p>
+                Belum punya akun?
+                <a href="#" id="showRegister">
+                    Daftar
+                </a>
+            </p>
+
+            <div id="loginMessage"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REGISTER -->
+
+    <section
+        id="registerPage"
+        class="hidden"
+    >
+
+        <div class="card">
+
+            <div class="logo">📝</div>
+
+            <h1>Daftar</h1>
+
+            <p>Buat akun Quiz Game</p>
+
+            <input
+                id="registerUsername"
+                type="text"
+                placeholder="Username"
+            >
+
+            <input
+                id="registerPassword"
+                type="password"
+                placeholder="Password"
+            >
+
+            <button id="registerBtn">
+                🚀 Daftar
+            </button>
+
+            <p>
+                Sudah punya akun?
+                <a href="#" id="showLogin">
+                    Login
+                </a>
+            </p>
+
+            <div id="registerMessage"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- HOME -->
+
+    <section
+        id="homePage"
+        class="hidden"
+    >
+
+        <div class="card">
+
+            <div class="logo">🎮</div>
+
+            <h1>Quiz Game</h1>
+
+            <h2>
+                Halo,
+                <span id="username"></span>!
+            </h2>
+
+            <div class="stats">
+
+                <div>
+                    ⭐
+                    <strong id="score">
+                        0
+                    </strong>
+
+                    <small>
+                        Skor
+                    </small>
+                </div>
+
+                <div>
+                    🏆
+                    <strong id="level">
+                        1
+                    </strong>
+
+                    <small>
+                        Level
+                    </small>
+                </div>
+
+            </div>
+
+            <button id="startBtn">
+                🎯 MULAI KUIS
+            </button>
+
+            <button
+                id="leaderboardBtn"
+                class="secondary"
+            >
+                🏆 LEADERBOARD
+            </button>
+
+            <button
+                id="logoutBtn"
+                class="danger"
+            >
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- QUIZ -->
+
+    <section
+        id="quizPage"
+        class="hidden"
+    >
+
+        <div class="card">
+
+            <div class="quizTop">
+
+                <span id="quizLevel">
+                    🔥 LEVEL 1
+                </span>
+
+                <span id="quizScore">
+                    ⭐ 0
+                </span>
+
+            </div>
+
+            <p id="questionNumber">
+                Soal 1 dari 5
+            </p>
+
+            <h2 id="question">
+                Memuat soal...
+            </h2>
+
+            <div id="answers"></div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESULT -->
+
+    <section
+        id="resultPage"
+        class="hidden"
+    >
+
+        <div class="card">
+
+            <div class="logo">🎉</div>
+
+            <h1>Kuis Selesai!</h1>
+
+            <p>
+                Skor kamu:
+            </p>
+
+            <div class="bigScore">
+                ⭐ <span id="finalScore">0</span>
+            </div>
+
+            <button id="playAgainBtn">
+                🔄 Main Lagi
+            </button>
+
+            <button
+                id="resultLeaderboardBtn"
+                class="secondary"
+            >
+                🏆 Leaderboard
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- LEADERBOARD -->
+
+    <section
+        id="leaderboardPage"
+        class="hidden"
+    >
+
+        <div class="card">
+
+            <div class="logo">🏆</div>
+
+            <h1>Leaderboard</h1>
+
+            <div id="leaderboardList">
+                Memuat...
+            </div>
+
+            <button id="backHomeBtn">
+                🏠 Kembali
+            </button>
+
+        </div>
+
+    </section>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
