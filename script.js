@@ -1,4 +1,4 @@
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://api.gamequiz.my.id";
 
 let currentUser = null;
 let questions = [];
